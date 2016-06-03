@@ -5,26 +5,16 @@ library(ggplot2)
 
 article_dat = read.csv("data/jasa.csv", stringsAsFactors = FALSE)
 
-
-# article_dat[article_dat$views >= 2000, ]
-# One outlier
+## Articles with large number of downloads
+article_dat[article_dat$views >= 2000, ]
+## One outlier
 article_dat = article_dat[article_dat$views < 10000, ]
 
-## Title words
-# titles = gsub("[[:punct:][:digit:]]+", " ", article_dat$title)
-# titles = gsub("^[[:space:]]+|[[:space:]]+&", "", titles)
-# titles = gsub("[[:space:]]+", " ", titles)
-# titles = tolower(titles)
-# words  = strsplit(titles, " ")
-# 
-# dict   = unique(unlist(words))
-# title_match = lapply(words, function(x) unique(match(x, dict)))
-# word_i = rep(seq_along(title_match), sapply(title_match, length))
-# word_j = unlist(title_match)
-# 
-# title_mat = sparseMatrix(i = word_i, j = word_j, x = 1)
+
+## Document-term matrix
 tokens = article_dat$title %>% tolower() %>% word_tokenizer()
 sw = c("of", "for", "and", "in", "with", "a", "the", "to", "on", "an", "by", "its")
+## 3-gram, mininum term count = 2
 it = itoken(tokens)
 title_voc = create_vocabulary(it, ngram = c(1, 3), stopwords = sw) %>%
     prune_vocabulary(term_count_min = 2)
@@ -33,19 +23,22 @@ vectorizer = vocab_vectorizer(title_voc)
 it = itoken(tokens)
 title_mat  = create_dtm(it, vectorizer)
 
-## Authors
+
+## Article-author matrix
 authors = ifelse(article_dat$authors == "", "#", article_dat$authors)
 authors = strsplit(authors, "#")
-
 author_tab = table(unlist(authors))
+## At least two papers to be included
 author_dict = names(author_tab)[author_tab > 1]
 author_match = lapply(authors, function(x) na.omit(match(x, author_dict)))
 author_i = rep(seq_along(author_match), sapply(author_match, length))
 author_j = unlist(author_match)
 author_mat = sparseMatrix(i = author_i, j = author_j, x = 1)
 
-## Section of articles (application, theory, etc.)
+
+## Category of articles (application section, method section, etc.)
 sects = as.character(article_dat$sect)
+## Combine similar categories
 sects = gsub(".*Presidential Address.*", "ASA Presidential Address", sects)
 sects = gsub(".*Case Studies.*", "Application and Case Studies", sects)
 sects = gsub(".*Original Articles.*", "Primary Article", sects)
