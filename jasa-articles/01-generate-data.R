@@ -1,8 +1,17 @@
 library(rvest)
 
 ## From: http://www.tandfonline.com/loi/uasa20
-vol_list   = read_html("data/vol_list.html")
-issue_info = vol_list %>% html_nodes("div .issueInfo")
+vol_list = read_html("data/vol_list.html")
+
+## Issue information is contained in <div class="issueInfo">
+# <div class="issueInfo">
+#     <a class="toclink" href="/toc/uasa20/111/513">
+#     Issue 513</a>
+#     2016
+#     pages
+#     1-445
+# </div>
+issue_info = vol_list %>% html_nodes("div.issueInfo")
 issue_link = issue_info %>% html_children() %>% html_attr("href")
 issue_text = gsub("[[:space:]]+", " ", issue_info %>% html_text(trim = TRUE))
 issue_text  = strsplit(issue_text, " ")
@@ -11,6 +20,7 @@ issue_text  = strsplit(issue_text, " ")
 base_link  = "http://www.tandfonline.com"
 issue_dat  = data.frame(link = paste(base_link, issue_link, sep = ""),
                         stringsAsFactors = FALSE)
+## Issue / 513 / 2016 / pages / 1-445
 issue_dat$no    = sapply(issue_text, function(x) as.integer(x[2]))
 issue_dat$year  = sapply(issue_text, function(x) as.integer(x[3]))
 issue_dat$pages = sapply(issue_text, function(x) x[5])
@@ -20,13 +30,15 @@ issue_content = vector(mode = "list", nrow(issue_dat))
 for(i in seq_along(issue_content))
 {
     print(i)
+    ## Download page content
     issue_content[[i]] = read_html(issue_dat$link[i])
 }
 
+## Get information from an article node
 article_info = function(article)
 {
-    children = article %>% html_children() %>% html_name
-    sect = if("h2" %in% children) article %>% html_node("h2") %>% html_text else ""
+    children = article %>% html_children() %>% html_name()
+    sect = if("h2" %in% children) article %>% html_node("h2") %>% html_text() else ""
     sect = gsub("^[[:space:]]|[[:space:]]$", "", sect)
     title = article %>% html_node("a.entryTitle") %>% html_text()
     authors = article %>% html_nodes("span.hlFld-ContribAuthor") %>% html_text()
