@@ -28,6 +28,8 @@ authors = strsplit(authors, "#")
 author_tab = table(unlist(authors))
 ## At least two papers to be included
 author_dict = names(author_tab)[author_tab > 1]
+## Matt Taddy has one article and one rejoinder
+author_dict = author_dict[-grep("Matt Taddy", author_dict)]
 author_match = lapply(authors, function(x) na.omit(match(x, author_dict)))
 author_i = rep(seq_along(author_match), sapply(author_match, length))
 author_j = unlist(author_match)

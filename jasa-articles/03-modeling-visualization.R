@@ -19,9 +19,9 @@ xsd  = sqrt((xss - nrow(X) * xbar^2) / (nrow(X) - 1))
 ## Lasso regression
 mod = glmnet(X, Y)
 ## Select a penalty parameter that selects 30 variables
-sum(coef(mod, s = 0.048, exact = TRUE) != 0)
+sum(coef(mod, s = 0.0477, exact = TRUE) != 0)
 ## Exclude intercept
-cf = coef(mod, s = 0.048, exact = TRUE)[-1]
+cf = coef(mod, s = 0.0477, exact = TRUE)[-1]
 ## Non-zero coefficients
 ind = abs(cf) > 1e-6
 ## Coefficients
