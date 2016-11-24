@@ -63,6 +63,8 @@ max(abs(beta_direct - beta_cg))
 
 ## Real data
 ## https://archive.ics.uci.edu/ml/datasets/Relative+location+of+CT+slices+on+axial+axis
+download.file("https://archive.ics.uci.edu/ml/machine-learning-databases/00206/slice_localization_data.zip","slice_localization_data.zip")
+unzip("slice_localization_data.zip")
 dat = read.csv("slice_localization_data.csv")
 n = nrow(dat)
 p = ncol(dat)

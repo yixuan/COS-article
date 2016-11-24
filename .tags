@@ -1,0 +1,964 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+共轭梯度法计算回归	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^# 共轭梯度法计算回归$/;"	function	line:1
+引子	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## 引子$/;"	function	line:3
+什么是共轭梯度法？	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## 什么是共轭梯度法？$/;"	function	line:33
+神奇在哪里？	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## 神奇在哪里？$/;"	function	line:47
+代码实现	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## 代码实现$/;"	function	line:57
+Target: solve linear equation Ax = b. A is positive definite	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Target: solve linear equation Ax = b. A is positive definite$/;"	function	line:62
+Ax      -- A function to calculate the matrix-vector product	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Ax      -- A function to calculate the matrix-vector product$/;"	function	line:63
+`A * x` given a vector `x` as the first argument	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^##            `A * x` given a vector `x` as the first argument$/;"	function	line:64
+b       -- Vector of the right hand side of the equation	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## b       -- Vector of the right hand side of the equation$/;"	function	line:65
+x0      -- Initial guess of the solution	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## x0      -- Initial guess of the solution$/;"	function	line:66
+eps     -- Precision parameter	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## eps     -- Precision parameter$/;"	function	line:67
+verbose -- Whether to print out iteration information	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## verbose -- Whether to print out iteration information$/;"	function	line:68
+Simulation example	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Simulation example$/;"	function	line:102
+[1] 7.422063e-12	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## [1] 7.422063e-12$/;"	function	line:120
+真有这么神奇？	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## 真有这么神奇？$/;"	function	line:136
+Iteration 1, err = 11262.97730747	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 1, err = 11262.97730747$/;"	function	line:148
+Iteration 2, err = 4471.54099614	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 2, err = 4471.54099614$/;"	function	line:149
+Iteration 3, err = 1783.28640925	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 3, err = 1783.28640925$/;"	function	line:150
+...	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## ...$/;"	function	line:151
+Iteration 100, err = 2.94723420	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 100, err = 2.94723420$/;"	function	line:152
+Iteration 101, err = 4.60232106	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 101, err = 4.60232106$/;"	function	line:153
+Iteration 102, err = 4.02014578	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 102, err = 4.02014578$/;"	function	line:154
+...	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## ...$/;"	function	line:155
+Iteration 200, err = 0.63018214	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 200, err = 0.63018214$/;"	function	line:156
+Iteration 201, err = 1.67568741	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 201, err = 1.67568741$/;"	function	line:157
+Iteration 202, err = 0.49243538	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 202, err = 0.49243538$/;"	function	line:158
+...	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## ...$/;"	function	line:159
+Iteration 382, err = 0.16954617	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 382, err = 0.16954617$/;"	function	line:160
+Iteration 383, err = 1.05050962	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 383, err = 1.05050962$/;"	function	line:161
+Iteration 384, err = 0.11322079	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 384, err = 0.11322079$/;"	function	line:162
+Iteration 1, err = 11256.55983300	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 1, err = 11256.55983300$/;"	function	line:179
+Iteration 2, err = 4455.13459864	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 2, err = 4455.13459864$/;"	function	line:180
+Iteration 3, err = 1767.78523995	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 3, err = 1767.78523995$/;"	function	line:181
+...	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## ...$/;"	function	line:182
+Iteration 61, err = 0.00164239	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 61, err = 0.00164239$/;"	function	line:183
+Iteration 62, err = 0.00127173	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 62, err = 0.00127173$/;"	function	line:184
+Iteration 63, err = 0.00092021	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## Iteration 63, err = 0.00092021$/;"	function	line:185
+总结	/Users/harryzhu/Github/COS-article/conjugate-gradient-for-regression/cg.md	/^## 总结$/;"	function	line:198
+ul	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^<ul>$/;"	function	line:1
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:2
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:3
+vol_111	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_111"><\/a>$/;"	anchor	line:4
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_111"><\/a>$/;"	function	line:4
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=111&amp;repitition=0#vol_111">$/;"	function	line:5
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:6
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:10
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:11
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/111\/513">$/;"	function	line:12
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:18
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:20
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:21
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:25
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:26
+vol_110	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_110"><\/a>$/;"	anchor	line:27
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_110"><\/a>$/;"	function	line:27
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=110&amp;repitition=0#vol_110">$/;"	function	line:28
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:29
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:33
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:34
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/110\/512">$/;"	function	line:35
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:41
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:43
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:44
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:47
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:48
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/110\/511">$/;"	function	line:49
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:55
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:57
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:58
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:61
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:62
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/110\/510">$/;"	function	line:63
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:69
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:71
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:72
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:75
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:76
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/110\/509">$/;"	function	line:77
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:83
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:85
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:86
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:90
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:91
+vol_109	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_109"><\/a>$/;"	anchor	line:92
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_109"><\/a>$/;"	function	line:92
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=109&amp;repitition=0#vol_109">$/;"	function	line:93
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:94
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:98
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:99
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/109\/508">$/;"	function	line:100
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:106
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:108
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:109
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:112
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:113
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/109\/507">$/;"	function	line:114
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:120
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:122
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:123
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:126
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:127
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/109\/506">$/;"	function	line:128
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:134
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:136
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:137
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:140
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:141
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/109\/505">$/;"	function	line:142
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:148
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:150
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:151
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:155
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:156
+vol_108	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_108"><\/a>$/;"	anchor	line:157
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_108"><\/a>$/;"	function	line:157
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=108&amp;repitition=0#vol_108">$/;"	function	line:158
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:159
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:163
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:164
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/108\/504">$/;"	function	line:165
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:171
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:173
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:174
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:177
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:178
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/108\/503">$/;"	function	line:179
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:185
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:187
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:188
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:191
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:192
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/108\/502">$/;"	function	line:193
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:199
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:201
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:202
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:205
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:206
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/108\/501">$/;"	function	line:207
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:213
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:215
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:216
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:220
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:221
+vol_107	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_107"><\/a>$/;"	anchor	line:222
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_107"><\/a>$/;"	function	line:222
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=107&amp;repitition=0#vol_107">$/;"	function	line:223
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:224
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:228
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:229
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/107\/500">$/;"	function	line:230
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:236
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:238
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:239
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:242
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:243
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/107\/499">$/;"	function	line:244
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:250
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:252
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:253
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:256
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:257
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/107\/498">$/;"	function	line:258
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:264
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:266
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:267
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:270
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:271
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/107\/497">$/;"	function	line:272
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:278
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:280
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:281
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:285
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:286
+vol_106	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_106"><\/a>$/;"	anchor	line:287
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_106"><\/a>$/;"	function	line:287
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=106&amp;repitition=0#vol_106">$/;"	function	line:288
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:289
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:293
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:294
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/106\/496">$/;"	function	line:295
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:301
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:303
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:304
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:307
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:308
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/106\/495">$/;"	function	line:309
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:315
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:317
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:318
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:321
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:322
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/106\/494">$/;"	function	line:323
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:329
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:331
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:332
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:335
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:336
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/106\/493">$/;"	function	line:337
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:343
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:345
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:346
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:350
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:351
+vol_105	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_105"><\/a>$/;"	anchor	line:352
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_105"><\/a>$/;"	function	line:352
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=105&amp;repitition=0#vol_105">$/;"	function	line:353
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:354
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:358
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:359
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/105\/492">$/;"	function	line:360
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:366
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:368
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:369
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:372
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:373
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/105\/491">$/;"	function	line:374
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:380
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:382
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:383
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:386
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:387
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/105\/490">$/;"	function	line:388
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:394
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:396
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:397
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:400
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:401
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/105\/489">$/;"	function	line:402
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:408
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:410
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:411
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:415
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:416
+vol_104	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_104"><\/a>$/;"	anchor	line:417
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_104"><\/a>$/;"	function	line:417
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=104&amp;repitition=0#vol_104">$/;"	function	line:418
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:419
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:423
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:424
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/104\/488">$/;"	function	line:425
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:431
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:433
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:434
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:437
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:438
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/104\/487">$/;"	function	line:439
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:445
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:447
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:448
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:451
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:452
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/104\/486">$/;"	function	line:453
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:459
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:461
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:462
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:465
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:466
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/104\/485">$/;"	function	line:467
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:473
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:475
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:476
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:480
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:481
+vol_103	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_103"><\/a>$/;"	anchor	line:482
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_103"><\/a>$/;"	function	line:482
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=103&amp;repitition=0#vol_103">$/;"	function	line:483
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:484
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:488
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:489
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/103\/484">$/;"	function	line:490
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:496
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:498
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:499
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:502
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:503
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/103\/483">$/;"	function	line:504
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:510
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:512
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:513
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:516
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:517
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/103\/482">$/;"	function	line:518
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:524
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:526
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:527
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:530
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:531
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/103\/481">$/;"	function	line:532
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:538
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:540
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:541
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:545
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:546
+vol_102	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_102"><\/a>$/;"	anchor	line:547
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_102"><\/a>$/;"	function	line:547
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=102&amp;repitition=0#vol_102">$/;"	function	line:548
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:549
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:553
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:554
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/102\/480">$/;"	function	line:555
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:561
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:563
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:564
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:567
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:568
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/102\/479">$/;"	function	line:569
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:575
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:577
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:578
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:581
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:582
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/102\/478">$/;"	function	line:583
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:589
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:591
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:592
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:595
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:596
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/102\/477">$/;"	function	line:597
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:603
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:605
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:606
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:610
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:611
+vol_101	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_101"><\/a>$/;"	anchor	line:612
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_101"><\/a>$/;"	function	line:612
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?close=101&amp;repitition=0#vol_101">$/;"	function	line:613
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-minus.gif" class="disclosureIcon">$/;"	function	line:614
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:618
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:619
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/101\/476">$/;"	function	line:620
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:626
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:628
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:629
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:632
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:633
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/101\/475">$/;"	function	line:634
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:640
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:642
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="Partial Access" alt="You have partial access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_part_free.gif">$/;"	function	line:643
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:646
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:647
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/101\/474">$/;"	function	line:648
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:654
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:656
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:657
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="indent floatContainer">$/;"	function	line:660
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueInfo">$/;"	function	line:661
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <a class="toclink" href="\/toc\/uasa20\/101\/473">$/;"	function	line:662
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="issueTitle">$/;"	function	line:668
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <div class="accessIcon">$/;"	function	line:670
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^        <img class="accessIcon" title="No Access" alt="You have no access" src="\/templates\/jsp\/_style2\/_tandf\/images\/access_no.gif">$/;"	function	line:671
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:675
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:676
+vol_100	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_100"><\/a>$/;"	anchor	line:677
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_100"><\/a>$/;"	function	line:677
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=100&amp;repitition=0#vol_100">$/;"	function	line:678
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:679
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:684
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:685
+vol_99	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_99"><\/a>$/;"	anchor	line:686
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_99"><\/a>$/;"	function	line:686
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=99&amp;repitition=0#vol_99">$/;"	function	line:687
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:688
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:693
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:694
+vol_98	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_98"><\/a>$/;"	anchor	line:695
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_98"><\/a>$/;"	function	line:695
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=98&amp;repitition=0#vol_98">$/;"	function	line:696
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:697
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:702
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:703
+vol_97	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_97"><\/a>$/;"	anchor	line:704
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_97"><\/a>$/;"	function	line:704
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=97&amp;repitition=0#vol_97">$/;"	function	line:705
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:706
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:711
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:712
+vol_96	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_96"><\/a>$/;"	anchor	line:713
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_96"><\/a>$/;"	function	line:713
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=96&amp;repitition=0#vol_96">$/;"	function	line:714
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:715
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:720
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:721
+vol_95	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_95"><\/a>$/;"	anchor	line:722
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_95"><\/a>$/;"	function	line:722
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=95&amp;repitition=0#vol_95">$/;"	function	line:723
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:724
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:729
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:730
+vol_94	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_94"><\/a>$/;"	anchor	line:731
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_94"><\/a>$/;"	function	line:731
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=94&amp;repitition=0#vol_94">$/;"	function	line:732
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:733
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:738
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:739
+vol_93	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_93"><\/a>$/;"	anchor	line:740
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_93"><\/a>$/;"	function	line:740
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=93&amp;repitition=0#vol_93">$/;"	function	line:741
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:742
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:747
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:748
+vol_92	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_92"><\/a>$/;"	anchor	line:749
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_92"><\/a>$/;"	function	line:749
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=92&amp;repitition=0#vol_92">$/;"	function	line:750
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:751
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:756
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:757
+vol_91	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_91"><\/a>$/;"	anchor	line:758
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_91"><\/a>$/;"	function	line:758
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=91&amp;repitition=0#vol_91">$/;"	function	line:759
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:760
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:765
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:766
+vol_90	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_90"><\/a>$/;"	anchor	line:767
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_90"><\/a>$/;"	function	line:767
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=90&amp;repitition=0#vol_90">$/;"	function	line:768
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:769
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:774
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:775
+vol_89	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_89"><\/a>$/;"	anchor	line:776
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_89"><\/a>$/;"	function	line:776
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=89&amp;repitition=0#vol_89">$/;"	function	line:777
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:778
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:783
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:784
+vol_88	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_88"><\/a>$/;"	anchor	line:785
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_88"><\/a>$/;"	function	line:785
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=88&amp;repitition=0#vol_88">$/;"	function	line:786
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:787
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:792
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:793
+vol_87	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_87"><\/a>$/;"	anchor	line:794
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_87"><\/a>$/;"	function	line:794
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=87&amp;repitition=0#vol_87">$/;"	function	line:795
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:796
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:801
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:802
+vol_86	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_86"><\/a>$/;"	anchor	line:803
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_86"><\/a>$/;"	function	line:803
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=86&amp;repitition=0#vol_86">$/;"	function	line:804
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:805
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:810
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:811
+vol_85	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_85"><\/a>$/;"	anchor	line:812
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_85"><\/a>$/;"	function	line:812
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=85&amp;repitition=0#vol_85">$/;"	function	line:813
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:814
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:819
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:820
+vol_84	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_84"><\/a>$/;"	anchor	line:821
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_84"><\/a>$/;"	function	line:821
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=84&amp;repitition=0#vol_84">$/;"	function	line:822
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:823
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:828
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:829
+vol_83	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_83"><\/a>$/;"	anchor	line:830
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_83"><\/a>$/;"	function	line:830
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=83&amp;repitition=0#vol_83">$/;"	function	line:831
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:832
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:837
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:838
+vol_82	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_82"><\/a>$/;"	anchor	line:839
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_82"><\/a>$/;"	function	line:839
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=82&amp;repitition=0#vol_82">$/;"	function	line:840
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:841
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:846
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:847
+vol_81	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_81"><\/a>$/;"	anchor	line:848
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_81"><\/a>$/;"	function	line:848
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=81&amp;repitition=0#vol_81">$/;"	function	line:849
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:850
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:855
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:856
+vol_80	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_80"><\/a>$/;"	anchor	line:857
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_80"><\/a>$/;"	function	line:857
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=80&amp;repitition=0#vol_80">$/;"	function	line:858
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:859
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:864
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:865
+vol_79	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_79"><\/a>$/;"	anchor	line:866
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_79"><\/a>$/;"	function	line:866
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=79&amp;repitition=0#vol_79">$/;"	function	line:867
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:868
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:873
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:874
+vol_78	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_78"><\/a>$/;"	anchor	line:875
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_78"><\/a>$/;"	function	line:875
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=78&amp;repitition=0#vol_78">$/;"	function	line:876
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:877
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:882
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:883
+vol_77	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_77"><\/a>$/;"	anchor	line:884
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_77"><\/a>$/;"	function	line:884
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=77&amp;repitition=0#vol_77">$/;"	function	line:885
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:886
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:891
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:892
+vol_76	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_76"><\/a>$/;"	anchor	line:893
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_76"><\/a>$/;"	function	line:893
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=76&amp;repitition=0#vol_76">$/;"	function	line:894
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:895
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:900
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:901
+vol_75	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_75"><\/a>$/;"	anchor	line:902
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_75"><\/a>$/;"	function	line:902
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=75&amp;repitition=0#vol_75">$/;"	function	line:903
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:904
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:909
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:910
+vol_74	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_74"><\/a>$/;"	anchor	line:911
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_74"><\/a>$/;"	function	line:911
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=74&amp;repitition=0#vol_74">$/;"	function	line:912
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:913
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:918
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:919
+vol_73	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_73"><\/a>$/;"	anchor	line:920
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_73"><\/a>$/;"	function	line:920
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=73&amp;repitition=0#vol_73">$/;"	function	line:921
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:922
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:927
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:928
+vol_72	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_72"><\/a>$/;"	anchor	line:929
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_72"><\/a>$/;"	function	line:929
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=72&amp;repitition=0#vol_72">$/;"	function	line:930
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:931
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:936
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:937
+vol_71	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_71"><\/a>$/;"	anchor	line:938
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_71"><\/a>$/;"	function	line:938
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=71&amp;repitition=0#vol_71">$/;"	function	line:939
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:940
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:945
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:946
+vol_70	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_70"><\/a>$/;"	anchor	line:947
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_70"><\/a>$/;"	function	line:947
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=70&amp;repitition=0#vol_70">$/;"	function	line:948
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:949
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:954
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:955
+vol_69	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_69"><\/a>$/;"	anchor	line:956
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_69"><\/a>$/;"	function	line:956
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=69&amp;repitition=0#vol_69">$/;"	function	line:957
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:958
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:963
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:964
+vol_68	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_68"><\/a>$/;"	anchor	line:965
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_68"><\/a>$/;"	function	line:965
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=68&amp;repitition=0#vol_68">$/;"	function	line:966
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:967
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:972
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:973
+vol_67	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_67"><\/a>$/;"	anchor	line:974
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_67"><\/a>$/;"	function	line:974
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=67&amp;repitition=0#vol_67">$/;"	function	line:975
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:976
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:981
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:982
+vol_66	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_66"><\/a>$/;"	anchor	line:983
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_66"><\/a>$/;"	function	line:983
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=66&amp;repitition=0#vol_66">$/;"	function	line:984
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:985
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:990
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:991
+vol_65	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_65"><\/a>$/;"	anchor	line:992
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_65"><\/a>$/;"	function	line:992
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=65&amp;repitition=0#vol_65">$/;"	function	line:993
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:994
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:999
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1000
+vol_64	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_64"><\/a>$/;"	anchor	line:1001
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_64"><\/a>$/;"	function	line:1001
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=64&amp;repitition=0#vol_64">$/;"	function	line:1002
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1003
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1008
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1009
+vol_63	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_63"><\/a>$/;"	anchor	line:1010
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_63"><\/a>$/;"	function	line:1010
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=63&amp;repitition=0#vol_63">$/;"	function	line:1011
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1012
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1017
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1018
+vol_62	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_62"><\/a>$/;"	anchor	line:1019
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_62"><\/a>$/;"	function	line:1019
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=62&amp;repitition=0#vol_62">$/;"	function	line:1020
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1021
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1026
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1027
+vol_61	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_61"><\/a>$/;"	anchor	line:1028
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_61"><\/a>$/;"	function	line:1028
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=61&amp;repitition=0#vol_61">$/;"	function	line:1029
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1030
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1035
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1036
+vol_60	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_60"><\/a>$/;"	anchor	line:1037
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_60"><\/a>$/;"	function	line:1037
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=60&amp;repitition=0#vol_60">$/;"	function	line:1038
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1039
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1044
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1045
+vol_59	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_59"><\/a>$/;"	anchor	line:1046
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_59"><\/a>$/;"	function	line:1046
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=59&amp;repitition=0#vol_59">$/;"	function	line:1047
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1048
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1053
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1054
+vol_58	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_58"><\/a>$/;"	anchor	line:1055
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_58"><\/a>$/;"	function	line:1055
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=58&amp;repitition=0#vol_58">$/;"	function	line:1056
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1057
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1062
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1063
+vol_57	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_57"><\/a>$/;"	anchor	line:1064
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_57"><\/a>$/;"	function	line:1064
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=57&amp;repitition=0#vol_57">$/;"	function	line:1065
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1066
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1071
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1072
+vol_56	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_56"><\/a>$/;"	anchor	line:1073
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_56"><\/a>$/;"	function	line:1073
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=56&amp;repitition=0#vol_56">$/;"	function	line:1074
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1075
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1080
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1081
+vol_55	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_55"><\/a>$/;"	anchor	line:1082
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_55"><\/a>$/;"	function	line:1082
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=55&amp;repitition=0#vol_55">$/;"	function	line:1083
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1084
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1089
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1090
+vol_54	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_54"><\/a>$/;"	anchor	line:1091
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_54"><\/a>$/;"	function	line:1091
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=54&amp;repitition=0#vol_54">$/;"	function	line:1092
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1093
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1098
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1099
+vol_53	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_53"><\/a>$/;"	anchor	line:1100
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_53"><\/a>$/;"	function	line:1100
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=53&amp;repitition=0#vol_53">$/;"	function	line:1101
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1102
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1107
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1108
+vol_52	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_52"><\/a>$/;"	anchor	line:1109
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_52"><\/a>$/;"	function	line:1109
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=52&amp;repitition=0#vol_52">$/;"	function	line:1110
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1111
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1116
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1117
+vol_51	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_51"><\/a>$/;"	anchor	line:1118
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_51"><\/a>$/;"	function	line:1118
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=51&amp;repitition=0#vol_51">$/;"	function	line:1119
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1120
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1125
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1126
+vol_50	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_50"><\/a>$/;"	anchor	line:1127
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_50"><\/a>$/;"	function	line:1127
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=50&amp;repitition=0#vol_50">$/;"	function	line:1128
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1129
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1134
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1135
+vol_49	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_49"><\/a>$/;"	anchor	line:1136
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_49"><\/a>$/;"	function	line:1136
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=49&amp;repitition=0#vol_49">$/;"	function	line:1137
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1138
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1143
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1144
+vol_48	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_48"><\/a>$/;"	anchor	line:1145
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_48"><\/a>$/;"	function	line:1145
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=48&amp;repitition=0#vol_48">$/;"	function	line:1146
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1147
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1152
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1153
+vol_47	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_47"><\/a>$/;"	anchor	line:1154
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_47"><\/a>$/;"	function	line:1154
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=47&amp;repitition=0#vol_47">$/;"	function	line:1155
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1156
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1161
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1162
+vol_46	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_46"><\/a>$/;"	anchor	line:1163
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_46"><\/a>$/;"	function	line:1163
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=46&amp;repitition=0#vol_46">$/;"	function	line:1164
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1165
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1170
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1171
+vol_45	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_45"><\/a>$/;"	anchor	line:1172
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_45"><\/a>$/;"	function	line:1172
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=45&amp;repitition=0#vol_45">$/;"	function	line:1173
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1174
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1179
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1180
+vol_44	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_44"><\/a>$/;"	anchor	line:1181
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_44"><\/a>$/;"	function	line:1181
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=44&amp;repitition=0#vol_44">$/;"	function	line:1182
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1183
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1188
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1189
+vol_43	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_43"><\/a>$/;"	anchor	line:1190
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_43"><\/a>$/;"	function	line:1190
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=43&amp;repitition=0#vol_43">$/;"	function	line:1191
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1192
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1197
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1198
+vol_42	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_42"><\/a>$/;"	anchor	line:1199
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_42"><\/a>$/;"	function	line:1199
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=42&amp;repitition=0#vol_42">$/;"	function	line:1200
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1201
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1206
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1207
+vol_41	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_41"><\/a>$/;"	anchor	line:1208
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_41"><\/a>$/;"	function	line:1208
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=41&amp;repitition=0#vol_41">$/;"	function	line:1209
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1210
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1215
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1216
+vol_40	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_40"><\/a>$/;"	anchor	line:1217
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_40"><\/a>$/;"	function	line:1217
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=40&amp;repitition=0#vol_40">$/;"	function	line:1218
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1219
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1224
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1225
+vol_39	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_39"><\/a>$/;"	anchor	line:1226
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_39"><\/a>$/;"	function	line:1226
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=39&amp;repitition=0#vol_39">$/;"	function	line:1227
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1228
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1233
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1234
+vol_38	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_38"><\/a>$/;"	anchor	line:1235
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_38"><\/a>$/;"	function	line:1235
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=38&amp;repitition=0#vol_38">$/;"	function	line:1236
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1237
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1242
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1243
+vol_37	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_37"><\/a>$/;"	anchor	line:1244
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_37"><\/a>$/;"	function	line:1244
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=37&amp;repitition=0#vol_37">$/;"	function	line:1245
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1246
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1251
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1252
+vol_36	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_36"><\/a>$/;"	anchor	line:1253
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_36"><\/a>$/;"	function	line:1253
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=36&amp;repitition=0#vol_36">$/;"	function	line:1254
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1255
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1260
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1261
+vol_35	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_35"><\/a>$/;"	anchor	line:1262
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_35"><\/a>$/;"	function	line:1262
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=35&amp;repitition=0#vol_35">$/;"	function	line:1263
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1264
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1269
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1270
+vol_34	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_34"><\/a>$/;"	anchor	line:1271
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_34"><\/a>$/;"	function	line:1271
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=34&amp;repitition=0#vol_34">$/;"	function	line:1272
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1273
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1278
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1279
+vol_33	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_33"><\/a>$/;"	anchor	line:1280
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_33"><\/a>$/;"	function	line:1280
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=33&amp;repitition=0#vol_33">$/;"	function	line:1281
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1282
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1287
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1288
+vol_32	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_32"><\/a>$/;"	anchor	line:1289
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_32"><\/a>$/;"	function	line:1289
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=32&amp;repitition=0#vol_32">$/;"	function	line:1290
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1291
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1296
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1297
+vol_31	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_31"><\/a>$/;"	anchor	line:1298
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_31"><\/a>$/;"	function	line:1298
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=31&amp;repitition=0#vol_31">$/;"	function	line:1299
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1300
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1305
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1306
+vol_30	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_30"><\/a>$/;"	anchor	line:1307
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_30"><\/a>$/;"	function	line:1307
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=30&amp;repitition=0#vol_30">$/;"	function	line:1308
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1309
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1314
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1315
+vol_29	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_29"><\/a>$/;"	anchor	line:1316
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_29"><\/a>$/;"	function	line:1316
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=29&amp;repitition=0#vol_29">$/;"	function	line:1317
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1318
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1323
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1324
+vol_28	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_28"><\/a>$/;"	anchor	line:1325
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_28"><\/a>$/;"	function	line:1325
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=28&amp;repitition=0#vol_28">$/;"	function	line:1326
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1327
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1332
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1333
+vol_27	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_27"><\/a>$/;"	anchor	line:1334
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_27"><\/a>$/;"	function	line:1334
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=27&amp;repitition=0#vol_27">$/;"	function	line:1335
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1336
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1341
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1342
+vol_26	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_26"><\/a>$/;"	anchor	line:1343
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_26"><\/a>$/;"	function	line:1343
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=26&amp;repitition=0#vol_26">$/;"	function	line:1344
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1345
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1350
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1351
+vol_25	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_25"><\/a>$/;"	anchor	line:1352
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_25"><\/a>$/;"	function	line:1352
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=25&amp;repitition=0#vol_25">$/;"	function	line:1353
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1354
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1359
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1360
+vol_24	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_24"><\/a>$/;"	anchor	line:1361
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_24"><\/a>$/;"	function	line:1361
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=24&amp;repitition=0#vol_24">$/;"	function	line:1362
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1363
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1368
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1369
+vol_23	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_23"><\/a>$/;"	anchor	line:1370
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_23"><\/a>$/;"	function	line:1370
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=23&amp;repitition=0#vol_23">$/;"	function	line:1371
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1372
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1377
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1378
+vol_22	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_22"><\/a>$/;"	anchor	line:1379
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_22"><\/a>$/;"	function	line:1379
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=22&amp;repitition=0#vol_22">$/;"	function	line:1380
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1381
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1386
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1387
+vol_21	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_21"><\/a>$/;"	anchor	line:1388
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_21"><\/a>$/;"	function	line:1388
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=21&amp;repitition=0#vol_21">$/;"	function	line:1389
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1390
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1395
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1396
+vol_20	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_20"><\/a>$/;"	anchor	line:1397
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_20"><\/a>$/;"	function	line:1397
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=20&amp;repitition=0#vol_20">$/;"	function	line:1398
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1399
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1404
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1405
+vol_19	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_19"><\/a>$/;"	anchor	line:1406
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_19"><\/a>$/;"	function	line:1406
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=19&amp;repitition=0#vol_19">$/;"	function	line:1407
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1408
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1413
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1414
+vol_18	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_18"><\/a>$/;"	anchor	line:1415
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_18"><\/a>$/;"	function	line:1415
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=18&amp;repitition=0#vol_18">$/;"	function	line:1416
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1417
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1422
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1423
+vol_17	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_17"><\/a>$/;"	anchor	line:1424
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_17"><\/a>$/;"	function	line:1424
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=17&amp;repitition=0#vol_17">$/;"	function	line:1425
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1426
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1431
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1432
+vol_16	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_16"><\/a>$/;"	anchor	line:1433
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_16"><\/a>$/;"	function	line:1433
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=16&amp;repitition=0#vol_16">$/;"	function	line:1434
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1435
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1440
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1441
+vol_15	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_15"><\/a>$/;"	anchor	line:1442
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_15"><\/a>$/;"	function	line:1442
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=15&amp;repitition=0#vol_15">$/;"	function	line:1443
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1444
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1449
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1450
+vol_14	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_14"><\/a>$/;"	anchor	line:1451
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_14"><\/a>$/;"	function	line:1451
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=14&amp;repitition=0#vol_14">$/;"	function	line:1452
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1453
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1458
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1459
+vol_13	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_13"><\/a>$/;"	anchor	line:1460
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_13"><\/a>$/;"	function	line:1460
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=13&amp;repitition=0#vol_13">$/;"	function	line:1461
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1462
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1467
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1468
+vol_12	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_12"><\/a>$/;"	anchor	line:1469
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_12"><\/a>$/;"	function	line:1469
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=12&amp;repitition=0#vol_12">$/;"	function	line:1470
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1471
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1476
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1477
+vol_11	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_11"><\/a>$/;"	anchor	line:1478
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_11"><\/a>$/;"	function	line:1478
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=11&amp;repitition=0#vol_11">$/;"	function	line:1479
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1480
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1485
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1486
+vol_10	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_10"><\/a>$/;"	anchor	line:1487
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_10"><\/a>$/;"	function	line:1487
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=10&amp;repitition=0#vol_10">$/;"	function	line:1488
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1489
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1494
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1495
+vol_9	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_9"><\/a>$/;"	anchor	line:1496
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_9"><\/a>$/;"	function	line:1496
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=9&amp;repitition=0#vol_9">$/;"	function	line:1497
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1498
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1503
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1504
+vol_8	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_8"><\/a>$/;"	anchor	line:1505
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_8"><\/a>$/;"	function	line:1505
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=8&amp;repitition=0#vol_8">$/;"	function	line:1506
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1507
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1512
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1513
+vol_7	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_7"><\/a>$/;"	anchor	line:1514
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_7"><\/a>$/;"	function	line:1514
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=7&amp;repitition=0#vol_7">$/;"	function	line:1515
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1516
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1521
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1522
+vol_6	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_6"><\/a>$/;"	anchor	line:1523
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_6"><\/a>$/;"	function	line:1523
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=6&amp;repitition=0#vol_6">$/;"	function	line:1524
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1525
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1530
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1531
+vol_5	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_5"><\/a>$/;"	anchor	line:1532
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_5"><\/a>$/;"	function	line:1532
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=5&amp;repitition=0#vol_5">$/;"	function	line:1533
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1534
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1539
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1540
+vol_4	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_4"><\/a>$/;"	anchor	line:1541
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_4"><\/a>$/;"	function	line:1541
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=4&amp;repitition=0#vol_4">$/;"	function	line:1542
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1543
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1548
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1549
+vol_3	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_3"><\/a>$/;"	anchor	line:1550
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_3"><\/a>$/;"	function	line:1550
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=3&amp;repitition=0#vol_3">$/;"	function	line:1551
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1552
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1557
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1558
+vol_2	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_2"><\/a>$/;"	anchor	line:1559
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_2"><\/a>$/;"	function	line:1559
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=2&amp;repitition=0#vol_2">$/;"	function	line:1560
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1561
+li	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^  <li class="volumeIssueList">$/;"	function	line:1566
+div	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^    <div class="content">$/;"	function	line:1567
+vol_1	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_1"><\/a>$/;"	anchor	line:1568
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a name="vol_1"><\/a>$/;"	function	line:1568
+a	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <a class="volume issueStyleCategory" href="\/loi\/uasa20?open=1&amp;repitition=0#vol_1">$/;"	function	line:1569
+img	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/data/vol_list.html	/^      <img border="0" alt="Expand" src="http:\/\/www.tandfonline.com\/templates\/jsp\/_style2\/_tandf\/images\/icon-sm-dk-plus.gif" class="disclosureIcon">$/;"	function	line:1570
+标题党统计学	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/jasa-articles.md	/^# 标题党统计学$/;"	function	line:1
+数据获取	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/jasa-articles.md	/^### 数据获取$/;"	function	line:32
+构造词频矩阵	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/jasa-articles.md	/^### 构造词频矩阵$/;"	function	line:37
+构造文章-作者矩阵	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/jasa-articles.md	/^### 构造文章-作者矩阵$/;"	function	line:65
+Lasso 回归建模	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/jasa-articles.md	/^### Lasso 回归建模$/;"	function	line:69
+结果分析	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/jasa-articles.md	/^### 结果分析$/;"	function	line:77
+最后的话	/Users/harryzhu/Github/COS-article/statistics-on-article-titles/jasa-articles.md	/^### 最后的话$/;"	function	line:88
